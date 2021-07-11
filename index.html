@@ -2,71 +2,179 @@
 <html>
 <head>
 <title>Dam Tien Dat</title>
+
+<!--Import file style.css-->
+<link rel="stylesheet" href="style.css"> 
+<link rel="stylesheet" href="css/all.min.css">
+
+</head>
   <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="icon" href="https://glitch.com/favicon.ico" />
-
     
-</head>
-<body>
+<!--VIDEO NỀN-->
+    
+      <video id="video"   muted loop autoplay class="video-background"   >
+        <source src="background video_1.mp4"  type="video/mp4">
+      </video>
+      <div class="middle-header">
+        <i><h1 style="color: rgb(40, 20, 220);font-family:Brush Script MT, Brush Script Std, cursive	;font-size: 500%;border-top: 70px;">SoundReLaxing</h1></i>
+        <i><h1 style="color: rgb(238, 237, 241);font-family:Brush Script MT, Brush Script Std, cursive;font-size: 200%;border-top:80px">Paradise of Silence</h1></i>
 
-<h1>HTML</h1>
-<hr>
-<p> This a body </p>
-<p> test dong </p>
+      </div>
+     
 
+   
 
-<!-- Cach tạo đường link cái dòng trắng là để hiện lên front end -->
-<a href="https://www.w3schools.com">Visit W3Schools</a>
+    <!--Nút SÓNG -->
+    <audio   id="wavesound">
+      <source src="sound/wavesound.mp3" type="audio/mpeg">
+      <source src="sound/wavesound.mp3" type="audio/ogg">
+      Your browser does not support the audio element.
+      </audio>
+    
+    <button id="wave" class="WAVE-BUTTON" onclick="playAudioWave()" type="button">  <i class="fas fa-water fa-sm fa-4x" style="color: blue;"></i> </button>
+   
+    <script>
+    var c=0;
+    var x = document.getElementById("wavesound"); 
+    var vid = document.getElementById("wavesound");
+    document.getElementById("wavesound").loop = true;
+    vid.volume = 0.4;
+    function playAudioWave() { 
+      if(c==0){ x.play();  c=1;document.getElementById("wave").style.backgroundColor="green" ;}
+      else if(c==1){x.pause(); c=0;document.getElementById("wave").style.backgroundColor="gray";
+      
+    }
+    } 
+    
+    </script>
 
-<!--Tạo link nhưng mở ra 1 tab mới k đóng tab cũ -->
-<p>Check out <a href="https://www.freecodecamp.org/" target="_blank">freeCodeCamp</a>.</p>
+<!--Nút MƯA -->
+<audio   id="rainsound">
+  <source src="sound/rainsound.mp3" type="audio/mpeg">
+  <source src="sound/rainsound.mp3" type="audio/ogg">
+      Your browser does not support the audio element.
+  </audio>
 
-<!--Cách để xuống dòng dùng <br> -->
-<p>Cach de xuong dong  <br> paragraph with a line break.</p>
+<button id="rain" class="RAIN-BUTTON" onclick="playAudioRain()" type="button">  <i class="fas fa-cloud-rain fa-4x" style="color: rgb(207, 56, 119);"></i> </button>
 
-<!--1 số loại heading -->
-<h1>Heading 1</h1>
-<h2>Heading 2</h2>
-<h3>Heading 3</h3>
-
-<!--THêm từ khóa PRE để tạo văn bản cách dòng các thứ tùy ý -->
-<pre>
-  My Bonnie lies over the oceand
-
-  My Bonnie lies over the sea.
-
-  My Bonnie lies over  an.
+<script>
+var c1=0;
+var x1 = document.getElementById("rainsound"); 
+var vid1 = document.getElementById("rainsound");
+document.getElementById("rainsound").loop = true;
+vid1.volume = 0.4;
+function playAudioRain() { 
+  if(c1==0){ x1.play();  c1=1;document.getElementById("rain").style.backgroundColor="green" ;}
+  else if(c1==1){x1.pause(); c1=0;document.getElementById("rain").style.backgroundColor="gray";
   
-         Oh, bring back my Bonnie to me.
-</pre>
-<!--Chỉnh các thứ thì tagname + style=" " nhớ dấu ngoặc kép rồi > các thuộc tính ngăn cách nhau bởi chấm phẩy -->
-<!--Thêm màu vào nền -->
-<body style="background-color:rgb(230, 176, 203);"></body>
-<!--Thêm màu vào dòng chữ -->
-<h1 style="background-color: blueviolet;">Dòng đã chỉnh màu </h1>
-<h1 style="color: rgb(226, 43, 43);">CHỉnh màu chữ </h1>
-<p1 style="font-family: 'Times New Roman', Times, serif;font-size: 300%;">CHỉnh font chữ</p1>
+}
+} 
+
+</script>
+
+<!--Nút SẤM -->
+<audio   id="thundersound">
+  <source src="sound/thundersound.mp3" type="audio/mpeg">
+  <source src="sound/thundersound.mp3" type="audio/ogg">
+  Your browser does not support the audio element.
+  </audio>
+
+<button id="thunder" class="button" style="left:40%" onclick="playAudioThunder()" type="button">   <i class="fas fa-bolt fa-4x" style="color: rgb(187, 255, 0);"></i> </button>
+
+<script>
+var c2=0;
+var x2 = document.getElementById("thundersound"); 
+var vid2 = document.getElementById("thundersound");
+document.getElementById("thundersound").loop = true;
+vid2.volume = 2.0;
+function playAudioThunder() { 
+  if(c2==0){ x2.play();  c2=1;document.getElementById("thunder").style.backgroundColor="green" ;}
+  else if(c2==1){x2.pause(); c2=0;document.getElementById("thunder").style.backgroundColor="gray";
+  
+}
+} 
+
+</script>
 
 
-<!--FORMAT chữ in đậm các thứ-->
+<!--Nút GIÓ -->
+<audio   id="windsound">
+  <source src="sound/wind sound.mp3" type="audio/mpeg">
+  <source src="sound/wind sound.mp3" type="audio/ogg">
+  Your browser does not support the audio element.
+  </audio>
+
+<button id="wind" class="button" style="left:52%" onclick="playAudioWind()" type="button">   <i class="fas fa-wind fa-4x" style="color: rgb(241, 243, 235);"></i> </button>
+
+<script>
+var c3=0;
+var x3 = document.getElementById("windsound"); 
+var vid3 = document.getElementById("windsound");
+document.getElementById("windsound").loop = true;
+vid3.volume = 2.0;
+function playAudioWind() { 
+  if(c3==0){ x3.play();  c3=1;document.getElementById("wind").style.backgroundColor="green" ;}
+  else if(c3==1){x3.pause(); c3=0;document.getElementById("wind").style.backgroundColor="gray";
+  
+}
+} 
+
+</script>
+
+<!--Nút CHIM -->
+<audio   id="birdsound">
+  <source src="sound/bird sound.mp3" type="audio/mpeg">
+  <source src="sound/bird sound.mp3" type="audio/ogg">
+  Your browser does not support the audio element.
+  </audio>
+
+<button id="bird" class="button" style="left:64%" onclick="playAudioWind()" type="button">   <i class="fas fa-dove fa-4x" style="color: rgb(199, 136, 77);"></i> </button>
+
+<script>
+var c4=0;
+var x4 = document.getElementById("birdsound"); 
+var vid4 = document.getElementById("birdsound");
+document.getElementById("birdsound").loop = true;
+vid3.volume = 2.0;
+function playAudioWind() { 
+  if(c4==0){ x4.play();  c4=1;document.getElementById("bird").style.backgroundColor="green" ;}
+  else if(c4==1){x4.pause(); c4=0;document.getElementById("bird").style.backgroundColor="gray";
+  
+}
+} 
+
+</script>
 
 
-<img src="Image/test.png" width="500" height="333">
-<br>
-<!--Chèn video YOUTUBE-->
+<!--Nút NHẠC -->
+<audio   id="musicsound">
+  <source src="sound/music.mp3" type="audio/mpeg">
+  <source src="sound/music.mp3 " type="audio/ogg">
+  Your browser does not support the audio element.
+  </audio>
 
-<iframe width="420" height="345" src="https://www.youtube.com/embed/tgbNymZ7vqY">
-</iframe>
+<button id="music" class="button" style="left:75%" onclick="playAudioMusic()" type="button">   <i class="fas fa-music fa-5x" style="color: rgb(238, 20, 20);"></i> </button>
 
-<p>
-  <b>Đây là chữ in đậm</b>
-  <del>CHữ có gạch dưới</del>
-</p>
+<script>
+var c5=0;
+var x5 = document.getElementById("musicsound"); 
+var vid5 = document.getElementById("musicsound");
+document.getElementById("musicsound").loop = true;
+vid5.volume = 3.0;
+function playAudioMusic() { 
+  if(c5==0){ x5.play();  c5=1;document.getElementById("music").style.backgroundColor="green" ;}
+  else if(c5==1){x5.pause(); c5=0;document.getElementById("music").style.backgroundColor="gray";
+  
+}
+} 
 
+</script>
+<p class="middle-border"></p>
+<p class="bottom-border"></p>
 
-
-
-
+<body>
+   
+         
 </body>
 </html>
