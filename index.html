@@ -129,7 +129,7 @@ function playAudioWind() {
   Your browser does not support the audio element.
   </audio>
 
-<button id="bird" class="button" style="left:64%" onclick="playAudioWind()" type="button">   <i class="fas fa-dove fa-4x" style="color: rgb(199, 136, 77);"></i> </button>
+<button id="bird" class="button" style="left:64%" onclick="playAudioBird()" type="button">   <i class="fas fa-dove fa-4x" style="color: rgb(199, 136, 77);"></i> </button>
 
 <script>
 var c4=0;
@@ -137,7 +137,7 @@ var x4 = document.getElementById("birdsound");
 var vid4 = document.getElementById("birdsound");
 document.getElementById("birdsound").loop = true;
 vid3.volume = 2.0;
-function playAudioWind() { 
+function playAudioBird() { 
   if(c4==0){ x4.play();  c4=1;document.getElementById("bird").style.backgroundColor="green" ;}
   else if(c4==1){x4.pause(); c4=0;document.getElementById("bird").style.backgroundColor="gray";
   
