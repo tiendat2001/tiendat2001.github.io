@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>SoundRelaxing</title>
+<title>SoundReLaxing</title>
 
 <!--Import file style.css-->
 <link rel="stylesheet" href="style.css"> 
@@ -21,11 +21,9 @@
         <i><h1 style="color: rgb(238, 237, 241);font-family:Brush Script MT, Brush Script Std, cursive;font-size: 200%;border-top:80px">Paradise of Silence</h1></i>
 
       </div>
-     
-      <!--Chữ ký -->
+     <!--Chữ ký -->
 
-      <i><h1 style="color: rgb(220, 127, 20);font-family:Brush Script MT, Brush Script Std, cursive	;font-size: 100%;border-top: 300px;left: 1150px;position: absolute;">Đàm Tiến Đạt</h1></i>
-
+     <i><h1 style="color: rgb(243, 187, 33);font-family:Brush Script MT, Brush Script Std, cursive	;font-size: 100%;top: 150px;;left: 1150px;position: absolute;">Đàm Tiến Đạt</h1></i>
 
    
 
@@ -37,12 +35,11 @@
       </audio>
     
     <button id="wave" class="WAVE-BUTTON" onclick="playAudioWave()" type="button">  <i class="fas fa-water fa-sm fa-4x" style="color: blue;"></i> </button>
-    
+   
     <script>
     var c=0;
     var x = document.getElementById("wavesound"); 
     var vid = document.getElementById("wavesound");
-
     document.getElementById("wavesound").loop = true;
     vid.volume = 0.4;
     function playAudioWave() { 
@@ -173,97 +170,97 @@ function playAudioMusic() {
   
 }
 } 
+
 </script>
 <p class="middle-border"></p>
 <p class="bottom-border"></p>
-<h1></h1>
+
 
 <!--THANH CHINH VOLUME-->
 
 
  <!-- NÚT SÓNG -->
-<input style="left:17%" type="range" min="1" max="100" value="50" class="slider" id="RangeWave" oninput="SetVolumeWave(this.value)" onchange="SetVolumeWave(this.value)">
+ <input style="left:17%" type="range" min="1" max="100" value="50" class="slider" id="RangeWave" oninput="SetVolumeWave(this.value)" onchange="SetVolumeWave(this.value)">
 
-<script>
-  function SetVolumeWave(val)
-  {
-      var player = document.getElementById("wavesound");
-      console.log('Before: ' + player.volume);
-      player.volume = val / 100;
-      console.log('After: ' + player.volume);
-  }
-</script>
-
- <!-- NÚT MƯA -->
-
-<input style="left:28%" type="range" min="1" max="100" value="50" class="slider" id="RangeRain" oninput="SetVolumeRain(this.value)" onchange="SetVolumeRain(this.value)">
-
-<script>
-  function SetVolumeRain(val)
-  {
-      var player = document.getElementById("rainsound");
-      console.log('Before: ' + player.volume);
-      player.volume = val / 100;
-      console.log('After: ' + player.volume);
-  }
-</script>
-
- <!-- NÚT SẤM -->
-
-<input style="left:40%" type="range" min="1" max="100" value="50" class="slider" id="RangeThunder" oninput="SetVolumeThunder(this.value)" onchange="SetVolumeThunder(this.value)">
-
-<script>
-  function SetVolumeThunder(val)
-  {
-      var player = document.getElementById("thundersound");
-      console.log('Before: ' + player.volume);
-      player.volume = val / 100;
-      console.log('After: ' + player.volume);
-  }
-</script>
-
- <!-- NÚT GIÓ -->
-
-<input style="left:52%" type="range" min="1" max="100" value="50" class="slider" id="RangeWind" oninput="SetVolumeWind(this.value)" onchange="SetVolumeWind(this.value)">
-
-<script>
-  function SetVolumeWind(val)
-  {
-      var player = document.getElementById("windsound");
-      console.log('Before: ' + player.volume);
-      player.volume = val / 100;
-      console.log('After: ' + player.volume);
-  }
-</script>
-
- <!-- NÚT CHIM -->
-
-
-<input style="left:64%" type="range" min="1" max="100" value="50" class="slider" id="RangeBird" oninput="SetVolumeBird(this.value)" onchange="SetVolumeBird(this.value)">
-
-<script>
-  function SetVolumeBird(val)
-  {
-      var player = document.getElementById("birdsound");
-      console.log('Before: ' + player.volume);
-      player.volume = val / 100;
-      console.log('After: ' + player.volume);
-  }
-</script>
-
- <!-- NÚT NHẠC -->
-
-<input style="left:75%" type="range" min="1" max="100" value="50" class="slider" id="RangeMusic" oninput="SetVolumeMusic(this.value)" onchange="SetVolumeMusic(this.value)">
-
-<script>
-  function SetVolumeMusic(val)
-  {
-      var player = document.getElementById("musicsound");
-      console.log('Before: ' + player.volume);
-      player.volume = val / 100;
-      console.log('After: ' + player.volume);
-  }
-</script>
-
-
+ <script>
+   function SetVolumeWave(val)
+   {
+       var player = document.getElementById("wavesound");
+       console.log('Before: ' + player.volume);
+       player.volume = val / 100;
+       console.log('After: ' + player.volume);
+   }
+ </script>
+ 
+  <!-- NÚT MƯA -->
+ 
+ <input style="left:28%" type="range" min="1" max="100" value="50" class="slider" id="RangeRain" oninput="SetVolumeRain(this.value)" onchange="SetVolumeRain(this.value)">
+ 
+ <script>
+   function SetVolumeRain(val)
+   {
+       var player = document.getElementById("rainsound");
+       console.log('Before: ' + player.volume);
+       player.volume = val / 100;
+       console.log('After: ' + player.volume);
+   }
+ </script>
+ 
+  <!-- NÚT SẤM -->
+ 
+ <input style="left:40%" type="range" min="1" max="100" value="50" class="slider" id="RangeThunder" oninput="SetVolumeThunder(this.value)" onchange="SetVolumeThunder(this.value)">
+ 
+ <script>
+   function SetVolumeThunder(val)
+   {
+       var player = document.getElementById("thundersound");
+       console.log('Before: ' + player.volume);
+       player.volume = val / 100;
+       console.log('After: ' + player.volume);
+   }
+ </script>
+ 
+  <!-- NÚT GIÓ -->
+ 
+ <input style="left:52%" type="range" min="1" max="100" value="50" class="slider" id="RangeWind" oninput="SetVolumeWind(this.value)" onchange="SetVolumeWind(this.value)">
+ 
+ <script>
+   function SetVolumeWind(val)
+   {
+       var player = document.getElementById("windsound");
+       console.log('Before: ' + player.volume);
+       player.volume = val / 100;
+       console.log('After: ' + player.volume);
+   }
+ </script>
+ 
+  <!-- NÚT CHIM -->
+ 
+ 
+ <input style="left:64%" type="range" min="1" max="100" value="50" class="slider" id="RangeBird" oninput="SetVolumeBird(this.value)" onchange="SetVolumeBird(this.value)">
+ 
+ <script>
+   function SetVolumeBird(val)
+   {
+       var player = document.getElementById("birdsound");
+       console.log('Before: ' + player.volume);
+       player.volume = val / 100;
+       console.log('After: ' + player.volume);
+   }
+ </script>
+ 
+  <!-- NÚT NHẠC -->
+ 
+ <input style="left:75%" type="range" min="1" max="100" value="50" class="slider" id="RangeMusic" oninput="SetVolumeMusic(this.value)" onchange="SetVolumeMusic(this.value)">
+ 
+ <script>
+   function SetVolumeMusic(val)
+   {
+       var player = document.getElementById("musicsound");
+       console.log('Before: ' + player.volume);
+       player.volume = val / 100;
+       console.log('After: ' + player.volume);
+   }
+ </script>
+ 
 </html>
