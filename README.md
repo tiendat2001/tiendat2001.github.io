@@ -1,1 +1,0 @@
-# tiendat2001.github.io
