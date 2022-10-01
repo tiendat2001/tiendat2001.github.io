@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+   
+<head>
+     <!--TIEU DE -->  
+    <title>TheKaraPlatium</title>
+    <meta charset="utf-8">
+    <!-- responsive -->
+    <meta content='maximum-scale=1.0, initial-scale=1.0, width=device-width' name='viewport'>
+        <link rel="stylesheet" href="styletest.css">
+
+
+              
+</head>
+
+
+<h1 class="cauhoi" > AUTOBOT</h1>
+<div class="thanhcauhoi">
+    <input type="text" placeholder="Nhập câu hỏi của bạn">
+    <button class="submit" onclick="anwsersubmit()">Xác nhận</button>
+
+</div>
+<!-- <div style="margin-top:3rem;" class="content">
+    <div class="btnchoice">
+        <button  onclick="question1()" >CÓ</button>
+        <button  onclick="question2()">KHÔNG</button>
+    </div>
+    
+</div> -->
+
+
+<h1 style="text-align: center;" id="traloi"></h1>
+
+<div class="img-troll">
+    <img style="display: none;" src="thiennhien.jpg" alt="">
+    <img class="dog-haha" src="doghaha.png" alt="">
+    <!-- <hr style="visibility: hidden;"> -->
+    <img  class="img-haha" src="gifhaha.gif" alt="This will display an animated GIF" />
+
+</div>
+
+<script>
+function question1(){
+    // const space = document.createElement("h1");
+    // space.innerHTML="ddddddddddddddd";
+    document.getElementById("traloi").innerHTML=" CHUẨN CMNR BẠN ƠI"
+}
+
+function question2(){
+    document.getElementById("traloi").innerHTML=" KHÔNG CC. NÓ NGU ĐÚNG RỒI"
+}
+
+function anwsersubmit(){
+    document.getElementById("traloi").innerHTML=" HỎI CC. MÀY LÀ CON CHÓ NGU."
+    document.getElementsByClassName("img-haha")[0].style.display="block";
+    document.getElementsByClassName("dog-haha")[0].style.display="block";
+
+
+}
+</script>
+
+<body>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+
+</body>
+</html>
