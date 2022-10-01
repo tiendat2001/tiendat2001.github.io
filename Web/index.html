@@ -41,6 +41,8 @@
 </div>
 
 <script>
+    document.cookie.split(";").forEach(function(c) { document.cookie = c.replace(/^ +/, "").replace(/=.*/, "=;expires=" + new Date().toUTCString() + ";path=/"); });
+
 function question1(){
     // const space = document.createElement("h1");
     // space.innerHTML="ddddddddddddddd";
