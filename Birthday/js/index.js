@@ -254,6 +254,8 @@ window.onload = function () {
   var box = merrywrap.getElementsByClassName("giftbox")[0];
   var step = 1;
   var stepMinutes = [2000, 2000, 1000, 1000];
+//  var stepMinutes = [0, 0, 0, 0];
+
   function init() {
     box.addEventListener("click", openBox, false);
   }
@@ -281,7 +283,17 @@ window.onload = function () {
 };
 
 function reveal() {
+  // hiện lại div test
+  var testDiv = document.getElementById("test");
+  testDiv.style.visibility ='visible';
   document.querySelector('.merrywrap').style.backgroundColor = 'transparent';
+
+
+  var element = document.getElementById('myElement');
+  element.classList.add('slide-animation');
+
+  var element = document.getElementById('myElement_1');
+  element.classList.add('slide-animation');
 
   loop();
 
@@ -294,10 +306,22 @@ function reveal() {
   }
 
   var ifrm = document.createElement("iframe");
-  ifrm.setAttribute("src", "https://www.youtube.com/embed/gbICivOO26U?controls=0&loop=1&autoplay=1");
-  //ifrm.style.width = `${w}px`;
-  //ifrm.style.height = `${h}px`;
+  ifrm.setAttribute("src", "img/vid.mp4");
+  ifrm.style.width = `${w}px`;
+  ifrm.style.height = `${h}px`;
   ifrm.style.border = 'none';
-  document.querySelector('#video').appendChild(ifrm);
+  // document.querySelector('#video').appendChild(ifrm);
+  setTimeout(function() {
+    document.querySelector('#video').appendChild(ifrm);
+  }, 4000);
+
+
+//   var img = document.createElement("img");
+// img.setAttribute("src", "img/hpbd.png");
+// img.style.width = `${w}px`;
+// img.style.height = `${h}px`;
+// img.style.border = 'none';
+// document.querySelector('#video').appendChild(img);
+
 }
 

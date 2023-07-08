@@ -364,21 +364,40 @@ div#sea {
 .step-4 .icons .row span, .step-3 .icons .row span {
   /*animation: wobble 0.6s linear infinite forwards;*/
   color: #c6e2ff;
-  animation: neon .08s ease-in-out infinite alternate;
+  animation: neon 5s ease-in-out infinite alternate;
 }
 
 .step-4 .icons .row span:nth-child(even), .step-3 .icons .row span:nth-child(even) {
   animation-duration: 0.7s;
 }
 
+/* 
+.step-1 .test{
+  opacity: 0;
+}
+
+.step-2 .test{
+  opacity: 0;
+}
+
+.step-3 .test{
+  opacity: 0;
+}
+
+.step-4 .test{
+  opacity: 0;
+} */
+
 @keyframes neon {
   from {
-    text-shadow: 0 0 6px rgba(202, 228, 225, 0.92), 0 0 30px rgba(202, 228, 225, 0.34), 0 0 12px rgba(30, 132, 242, 0.52), 0 0 21px rgba(30, 132, 242, 0.92), 0 0 34px rgba(30, 132, 242, 0.78), 0 0 54px rgba(30, 132, 242, 0.92);
+    text-shadow: 0 0 6px rgba(170, 224, 19, 0.92), 0 0 30px rgba(202, 228, 225, 0.34), 0 0 12px rgba(23, 132, 242, 0.52), 0 0 21px rgba(30, 132, 242, 0.92), 0 0 34px rgba(30, 132, 242, 0.78), 0 0 54px rgba(30, 132, 242, 0.92);
   }
   to {
-    text-shadow: 0 0 6px rgba(202, 228, 225, 0.98), 0 0 30px rgba(202, 228, 225, 0.42), 0 0 12px rgba(30, 132, 242, 0.58), 0 0 22px rgba(30, 132, 242, 0.84), 0 0 38px rgba(30, 132, 242, 0.88), 0 0 60px #1e84f2;
+    text-shadow: 0 0 6px rgba(1, 255, 35, 0.98), 0 0 30px rgba(217, 255, 0, 0.42), 0 0 12px rgba(0, 119, 255, 0.986), 0 0 22px rgba(229, 255, 0, 0.84), 0 0 38px rgba(255, 3, 179, 0.88), 0 0 60px #d9ff02;
   }
 }
+
+
 .moon {
   position: absolute;
   top: 10%;
@@ -457,3 +476,55 @@ div#sea {
   }
 }
 
+#test{
+ visibility: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.img_nguyet {
+  position: absolute;
+  
+  height: 30%;
+  width: 50%;
+  /* background-color: rgb(255, 255, 255); Chỉ để hiển thị màu nền cho div img_nguyet, bạn có thể thay đổi màu sắc */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.top{
+  top: 8%;
+}
+
+
+.down{
+  bottom: 25%;
+  left:10%;
+}
+.img_nguyet  img {
+  max-width: 350px;
+  max-height: 350px;
+  display: block;
+  margin: 0 auto;
+  position: relative;
+  animation: slideLeft 2s linear forwards;
+  opacity: 0;
+
+}
+
+.slide-animation {
+  animation: slideLeft 5s linear forwards;
+}
+
+@keyframes slideLeft {
+  0% {
+    transform: translateX(200%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
