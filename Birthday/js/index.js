@@ -306,14 +306,14 @@ function reveal() {
   }
 
   var ifrm = document.createElement("iframe");
-  ifrm.setAttribute("src", "img/vid.mp4");
+  ifrm.setAttribute("src", "img/vid1.mp4");
   ifrm.style.width = `${w}px`;
   ifrm.style.height = `${h}px`;
   ifrm.style.border = 'none';
   // document.querySelector('#video').appendChild(ifrm);
   setTimeout(function() {
     document.querySelector('#video').appendChild(ifrm);
-  }, 4000);
+  }, 1000);
 
 
 //   var img = document.createElement("img");
