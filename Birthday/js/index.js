@@ -253,8 +253,8 @@ window.onload = function () {
   var merrywrap = document.getElementById("merrywrap");
   var box = merrywrap.getElementsByClassName("giftbox")[0];
   var step = 1;
-  // var stepMinutes = [2000, 2000, 1000, 1000];
- var stepMinutes = [0, 0, 0, 0];
+  var stepMinutes = [2000, 2000, 1000, 1000];
+//  var stepMinutes = [0, 0, 0, 0];
 
   function init() {
     box.addEventListener("click", openBox, false);
@@ -289,11 +289,11 @@ function reveal() {
   document.querySelector('.merrywrap').style.backgroundColor = 'transparent';
 
 
-  // var element = document.getElementById('myElement');
-  // element.classList.add('slide-animation');
+  var element = document.getElementById('myElement');
+  element.classList.add('slide-animation');
 
-  // var element = document.getElementById('myElement_1');
-  // element.classList.add('slide-animation');
+  var element = document.getElementById('myElement_1');
+  element.classList.add('slide-animation');
 
   loop();
 
