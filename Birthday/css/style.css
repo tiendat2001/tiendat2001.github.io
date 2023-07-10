@@ -476,43 +476,61 @@ div#sea {
   }
 }
 
-#test{
+#img_contain{
  visibility: hidden;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.img_nguyet {
+.img_nguyet  {
   position: absolute;
   
   height: 30%;
-  width: 50%;
+  width: 35%;
   /* background-color: rgb(255, 255, 255); Chỉ để hiển thị màu nền cho div img_nguyet, bạn có thể thay đổi màu sắc */
   display: flex;
-  justify-content: center;
+
+  
   align-items: center;
+  
 }
 
 .top{
   top: 8%;
+  justify-content: center;
+  gap: 100px;
 }
 
 
 .down{
   bottom: 25%;
   left:10%;
+  justify-content: center;
+  gap: 100px;
 }
 .img_nguyet  img {
-  max-width: 350px;
-  max-height: 350px;
+  max-width: 400px;
+  max-height: 200px;
   display: block;
   margin: 0 auto;
   position: relative;
   animation: slideLeft 2s linear forwards;
   opacity: 0;
-
+  /* border-radius: 10px;  */
+  overflow: hidden; /* Ẩn phần ảnh vượt quá kích thước container */
+  /* border-radius: 10px;
+  border: 5px solid #00f7ff; 
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); 
+  background: linear-gradient(135deg, #00f3ff, #0066ff);  */
 }
+
+.borderimg1 { 
+  border: 12px solid transparent;
+  border-image: url(../img/5.png) 30 round;
+}
+
+
 
 .slide-animation {
   animation: slideLeft 5s linear forwards;
@@ -528,6 +546,8 @@ div#sea {
     opacity: 1;
   }
 }
+
+
 /* 
 
 @media only screen and (max-width:739px){
