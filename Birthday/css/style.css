@@ -3,6 +3,8 @@ html, body, .container {
   height: 100%;
   font-family: 'Great Vibes', cursive;}
 
+
+
 body {
   background: #e74;
   overflow: hidden;
@@ -389,7 +391,7 @@ div#sea {
 
 @keyframes neon {
   from {
-    text-shadow: 0 0 6px rgba(255, 217, 0, 0.92), 0 0 30px rgba(202, 228, 225, 0.34), 0 0 12px rgba(23, 132, 242, 0.52), 0 0 21px rgba(30, 132, 242, 0.92), 0 0 34px rgba(30, 132, 242, 0.78), 0 0 54px rgba(30, 132, 242, 0.92);
+    text-shadow: 0 0 6px rgba(255, 0, 212, 0.92), 0 0 30px rgba(202, 228, 225, 0.34), 0 0 12px rgba(23, 132, 242, 0.52), 0 0 21px rgba(30, 132, 242, 0.92), 0 0 34px rgba(30, 132, 242, 0.78), 0 0 54px rgba(30, 132, 242, 0.92);
   }
   to {
     text-shadow: 0 0 6px rgba(0, 183, 255, 0.98), 0 0 30px rgba(217, 255, 0, 0.42), 0 0 12px rgba(0, 119, 255, 0.986), 0 0 22px rgba(229, 255, 0, 0.84), 0 0 38px rgba(255, 3, 179, 0.88), 0 0 60px #d9ff02;

@@ -281,7 +281,7 @@ window.onload = function () {
   init();
 
 };
-
+ // sau khi hộp quà
 function reveal() {
   // hiện lại div test
   var testDiv = document.getElementById("img_contain");
@@ -306,14 +306,20 @@ function reveal() {
   }
 
   var ifrm = document.createElement("iframe");
-  ifrm.setAttribute("src", "img/vid1.mp4");
+  ifrm.setAttribute("src", "img/vid_4.mp4");
   ifrm.style.width = `${w}px`;
   ifrm.style.height = `${h}px`;
   ifrm.style.border = 'none';
-  // document.querySelector('#video').appendChild(ifrm);
-  setTimeout(function() {
-    document.querySelector('#video').appendChild(ifrm);
-  }, 1000);
+  ifrm.setAttribute("loop", "true");
+
+  document.querySelector('#video').appendChild(ifrm);
+  ifrm.addEventListener("ended", function() {
+    // Bắt đầu phát lại video
+    ifrm.play();
+  });
+  // setTimeout(function() {
+  //   document.querySelector('#video').appendChild(ifrm);
+  // }, 1000);
 
 
 //   var img = document.createElement("img");
