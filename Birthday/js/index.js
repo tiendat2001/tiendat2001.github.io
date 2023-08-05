@@ -307,6 +307,7 @@ function reveal() {
 
   var ifrm = document.createElement("iframe");
   ifrm.setAttribute("src", "img/vid_4.mp4");
+  ifrm.setAttribute("preload", "auto"); // Thêm thuộc tính preload
   ifrm.style.width = `${w}px`;
   ifrm.style.height = `${h}px`;
   ifrm.style.border = 'none';
