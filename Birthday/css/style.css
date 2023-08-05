@@ -96,12 +96,12 @@ div#sea {
   position: absolute;
   color: #fff;
   width: 100%;
-  content: "Click Me!";
+  content: "Đợi 10 giây rồi bấm nha ^_^";
   left: 0;
   bottom: 0;
   font-size: 24px;
   text-align: center;
-  transform: rotate(-20deg);
+  /* transform: rotate(-20deg); */
   transform-origin: 0 0;
 }
 .giftbox .cover {
