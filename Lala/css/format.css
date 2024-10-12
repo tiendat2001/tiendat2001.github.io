@@ -100,7 +100,9 @@
 	width: 92%;
 	height: 92%;
 }
-
+img[src=""] {
+    display: none;
+}
 #imgTxt{
 	position: absolute;
 	/* display: table; */
@@ -120,6 +122,8 @@
 	margin: auto;
 	width: 100%;
 	height: 100%;
+	/* object-fit: contain; Giữ nguyên tỷ lệ và không bị cắt phần nào */
+	opacity: 0;
 }
 
 #Txt{

@@ -1,10 +1,11 @@
 // nút trái tim
 var btn = document.getElementById("heartTxt");
+var img = document.getElementById('img');
 btn.style.opacity = 0;
 var btnVal = 0;
 
 function showImage(){
-	//document.getElementById("imgTxt").style.opacity = 0;
+	img.style.opacity = 1;
 	myImage.setAttribute("src", imageArray[imageIndex]);
 	myTxt.innerHTML = txtArray[imageIndex];
 	//document.getElementById("imgTxt").style.opacity = 1 - flag;
@@ -101,4 +102,5 @@ imgInterval = setInterval(function (){
 	
 	}
 }, 50);
+
 // event();
