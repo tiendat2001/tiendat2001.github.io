@@ -2,7 +2,7 @@
 let i = 0;
 let text1 = "Hey! Miss Qiu";
 let text2 = "Today is the Big Day."
-let speed = 100;
+let speed = 1; // dang chinh
 
 function typeWriter(text, para){
 	if(ok == 2){
@@ -11,7 +11,7 @@ function typeWriter(text, para){
 	if(i < text.length){
 		document.getElementById(para).innerHTML += text.charAt(i);
 		i++;
-		speed = Math.random() * 50 + 100;
+		speed = Math.random() * 500 + 100;
 	}
 	else{
 		if(ok == 0){
