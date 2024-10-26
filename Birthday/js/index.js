@@ -308,7 +308,7 @@ function reveal() {
   var ifrm = document.createElement("iframe");
   // ifrm.setAttribute("src", "img/vid_4.mp4");
   // ifrm.setAttribute("preload", "auto"); // Thêm thuộc tính preload
-  ifrm.setAttribute("src", "https://www.youtube.com/embed/QNufCtkCjXc");
+  ifrm.setAttribute("src", "https://www.youtube.com/embed/QNufCtkCjXc?autoplay=1&loop=1&playlist=QNufCtkCjXc");
   ifrm.style.width = `${w}px`;
   ifrm.style.height = `${h}px`;
   ifrm.style.border = 'none';

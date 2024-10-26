@@ -45,6 +45,8 @@ function play(){
     // document.getElementById("typeDiv").style.opacity = flag;
     // document.getElementById("imgTxt").style.opacity = 1 - flag;
 
+	var audio = document.getElementById("myAudio");
+	audio.play();
     // Gọi showImage mỗi khi nhấn nút, thay vì sử dụng setInterval
 	document.getElementById("typeDiv").style.opacity = 0;
     showImage();
