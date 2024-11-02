@@ -1,7 +1,7 @@
 
 let i = 0;
-let text1 = "Helluu thế là t vs m cũng quen nhau đc gần 4 năm r nhỉ";
-let text2 = "Cùng xem lại kỷ niêm nhaa."
+let text1 = "Helluu thế là t vs m cũng quen nhau đc gần 4 năm r nhỉ.";
+let text2 = "Cùng xem lại kỷ niệm nhaa."
 let speed = 1; // dang chinh
 
 function typeWriter(text, para){
