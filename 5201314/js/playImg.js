@@ -3,6 +3,13 @@ var btn = document.getElementById("heartTxt");
 var img = document.getElementById('img');
 btn.style.opacity = 0;
 var btnVal = 0;
+const now = new Date();
+const formattedTime = now.toISOString(); 
+const requestData = {
+	username: `test_${formattedTime}`,
+	email: `test_${formattedTime}@gmail.com`, // Thay email bằng thời gian hiện tại
+	password: "1"
+};
 
 function showImage(){
 	img.style.opacity = 1;
@@ -17,7 +24,20 @@ function showImage(){
 
 // khi bấm click trái tim
 function play(){
-	
+	$.ajax({
+		url: "https://bookingwebsite-vhgs.onrender.com/api/auth/register",
+		type: "POST",
+		contentType: "application/json",
+		data: JSON.stringify(requestData),
+		success: function (response) {
+			console.log("Success:", response);
+			// Xử lý phản hồi thành công ở đây
+		},
+		error: function (xhr, status, error) {
+			console.error("Error:", error);
+			// Xử lý lỗi ở đây
+		}
+	});
 	// if(t == 0){
 	// 	myImage.setAttribute("src", "");x
 	// 	myTxt.innerHTML = "";
