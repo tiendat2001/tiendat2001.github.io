@@ -1,7 +1,7 @@
 
 let i = 0;
-let text1 = "Helluu thế là t vs m cũng quen nhau đc gần 4 năm r nhỉ.";
-let text2 = "Cùng xem lại kỷ niệm nhaa."
+let text1 = "Cám ơn m vì đã đồng hành với t";
+let text2 = " trong khoảng thời gian qua!"
 let text3 = "Amireux"
 let speed = 1; // dang chinh
 
