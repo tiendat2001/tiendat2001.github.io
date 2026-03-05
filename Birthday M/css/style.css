@@ -96,9 +96,8 @@ div#sea {
   position: absolute;
   color: #fff;
   width: 100%;
-  content: "Bam vao di e Mai Nung ^";
+  content: "Đợi 10 giây rồi bấm nha ^_^";
   left: 0;
-  font-family: 'Time News Roman', cursive;
   bottom: 0;
   font-size: 24px;
   text-align: center;
@@ -507,13 +506,13 @@ div#sea {
 
 .down{
   bottom: 25%;
-  left:10%;
+  left:32%;
   justify-content: center;
   gap: 100px;
 }
 .img_nguyet  img {
-  max-width: 400px;
-  max-height: 200px;
+  width: 200px;
+  height: 300px;
   display: block;
   margin: 0 auto;
   position: relative;
