@@ -570,17 +570,18 @@ div#sea {
 
 
 #img_contain_4{
-    margin-top: 5%;
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;   /* cho phép xuống dòng */
-    gap: 10%;   /* khoảng cách giữa các ảnh */
-    height: 80vh;
+    margin-top: 20vh;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px;
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .img_box{
-    width: 40%;
-    height: 35%;
+    aspect-ratio: 3/4;
+    overflow: hidden;
 }
 
 .img_box img{
