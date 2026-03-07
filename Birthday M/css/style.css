@@ -3,7 +3,11 @@ html, body, .container {
   height: 100%;
   font-family: 'Great Vibes', cursive;}
 
-
+html, body {
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+}
 
 body {
   background: #e74;

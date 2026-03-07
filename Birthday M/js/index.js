@@ -283,6 +283,15 @@ window.onload = function () {
 };
  // sau khi hộp quà
 function reveal() {
+    // Ẩn overflow trước để tránh scrollbar làm lệch kích thước
+  document.body.style.overflow = 'hidden';
+  document.documentElement.style.overflow = 'hidden';
+
+  // Recalculate canvas size tại thời điểm reveal
+  cw = window.innerWidth;
+  ch = window.innerHeight;
+  canvas.width = cw;
+  canvas.height = ch;
   // hiện lại div test
   var testDiv = document.getElementById("img_contain");
   testDiv.style.visibility ='visible';
